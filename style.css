@@ -40,3 +40,11 @@ nav a {
   text-decoration: none;
   border-radius: 8px;
 }
+.hero {
+  height: 100vh;
+  background: url('home.jpg') center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
