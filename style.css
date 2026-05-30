@@ -5,39 +5,10 @@ body {
   color: white;
 }
 
-/* NAVBAR */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(12px);
-  z-index: 1000;
-}
-
-.logo {
-  height: 55px;
-}
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: gold;
-}
-
-/* HERO WITH POSTER */
+/* HERO */
 .hero {
   height: 100vh;
- background: url('Untitled design.png') center/cover no-repeat;
+  background: url('Untitled design.png') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,11 +28,16 @@ nav a:hover {
   z-index: 2;
 }
 
+.logo {
+  height: 70px;
+  margin-bottom: 20px;
+}
+
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 85px;
-  letter-spacing: 8px;
+  font-size: 80px;
   margin: 0;
+  letter-spacing: 6px;
 }
 
 p {
@@ -69,54 +45,29 @@ p {
   opacity: 0.85;
 }
 
-.btn {
+/* MENU BUTTONS */
+.menu {
+  margin-top: 30px;
+}
+
+.menu a {
   display: inline-block;
-  margin-top: 25px;
-  padding: 16px 35px;
-  background: linear-gradient(45deg, gold, #d4af37);
-  color: black;
-  font-weight: bold;
-  border-radius: 8px;
+  margin: 8px;
+  padding: 10px 18px;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
   text-decoration: none;
+  border-radius: 6px;
   transition: 0.3s;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-}
-
-/* SECTIONS */
-.section {
-  padding: 120px 20px;
-  text-align: center;
-}
-
-.dark {
-  background: #071428;
-}
-
-/* FOOTER */
-.footer {
-  background: #030814;
-  text-align: center;
-  padding: 70px 20px;
-}
-
-.footer h3 {
-  color: gold;
-  letter-spacing: 4px;
-}
-
-.socials a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
-  padding: 8px 12px;
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 6px;
-}
-
-.socials a:hover {
+.menu a:hover {
   background: gold;
   color: black;
+}
+
+.apply {
+  background: gold;
+  color: black !important;
+  font-weight: bold;
 }
