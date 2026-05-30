@@ -5,7 +5,7 @@ body {
   color: white;
 }
 
-/* HERO WITH NEW POSTER */
+/* HERO BACKGROUND */
 .hero {
   height: 100vh;
   background: url('FON1.png') center/cover no-repeat;
@@ -13,10 +13,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-/* DARK OVERLAY FOR TEXT READABILITY */
+/* DARK OVERLAY */
 .overlay {
   position: absolute;
   width: 100%;
@@ -24,41 +23,80 @@ body {
   background: rgba(0,0,0,0.55);
 }
 
-/* MENU (BOTTOM CENTER FIXED) */
+/* BUTTONS (LOWER MIDDLE POSITION) */
 .menu {
   position: absolute;
-  bottom: 40px;
+  top: 58%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 14px;
+
+  z-index: 2;
 }
 
-/* SILVER BUTTONS */
+/* SILVER BIG BUTTONS */
 .menu a {
-  padding: 14px 22px;
-  font-size: 16px;
+  padding: 18px 28px;
+  font-size: 18px;
   font-weight: 700;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 10px;
+
   color: black;
   background: linear-gradient(45deg, #e0e0e0, #b0b0b0);
-  border: 1px solid rgba(255,255,255,0.4);
-  transition: 0.3s;
-  min-width: 120px;
+  border: 1px solid rgba(255,255,255,0.5);
+
+  min-width: 150px;
   text-align: center;
+  transition: 0.3s;
 }
 
 /* HOVER EFFECT */
 .menu a:hover {
-  transform: scale(1.08);
-  box-shadow: 0 10px 25px rgba(255,255,255,0.25);
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(255,255,255,0.25);
 }
 
-/* APPLY BUTTON (SPECIAL SILVER-GOLD MIX) */
+/* APPLY BUTTON */
 .menu a.apply {
-  background: linear-gradient(45deg, #f5f5f5, #a9a9a9);
-  font-weight: 800;
+  background: linear-gradient(45deg, #f5f5f5, #9c9c9c);
+}
+
+/* CONTACT SECTION */
+.contact {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+/* EMAIL TEXT */
+.contact p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* SOCIAL LINKS */
+.socials {
+  margin-top: 10px;
+}
+
+.socials a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  background: gold;
+  color: black;
 }
